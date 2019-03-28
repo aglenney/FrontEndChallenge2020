@@ -1,0 +1,119 @@
+body {
+  background-color: white;
+  font-family: -apple -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 375px;
+}
+
+main {
+  background-color:#26BC98;
+  width: 375px;
+  height: 780px;
+}
+
+nav {
+  padding-bottom: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  width: 375px;
+}
+
+.back-arrow {
+  padding-left: 8px;
+}
+
+.hamburger {
+  padding-right: 8px;
+}
+
+.map {
+  background-image: url(Images/map.png);
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.Search {
+  background-image:url(Images/Search.png);
+  background-size: cover;
+  width: 80%;
+  height: 40px;
+  margin-left: 35px;
+  display: flex;
+  justify-content: center;
+  margin-top: -290px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  color: #8C8C8C;
+}
+
+.bottom-arrow {
+  margin-top: 240px;
+  margin-left: 170px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 12px;
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.bus-routes {
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+table {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 355px;
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.busnumber {
+  color:#26BC98;
+  font-weight: 600;
+}
+
+.direction {
+  padding-left: 20px;
+}
+
+.destination {
+  padding-left: 20px;
+}
+
+h3 {
+  color: #8C8C8C;
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.right-arrow {
+  height:20px;
+}
+
+.Reroute h2, .Reroute h3 {
+  color: red;
+}
+
+.Out-of-service h2, .Out-of-service1 h2, .Out-of-service2 h2 {
+  color:#8C8C8C;
+  font-weight: 300;
+}
