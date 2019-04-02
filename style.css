@@ -2,6 +2,10 @@ body {
   background-color: white;
   font-family: -apple -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 375px;
+  border-right: 1px solid  #26BC98;
+  border-left: 1px solid  #26BC98;;
+  border-bottom: 1px solid  #26BC98;
+  border-top: 1px solid #26BC98;
 }
 
 main {
@@ -64,56 +68,83 @@ p {
   font-weight: 400;
   font-size: 12px;
   color: white;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-top: 5px;
-}
-
-.bus-routes {
-  margin-left: 10px;
-  margin-top: -10px;
-}
-
-table {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  width: 355px;
+  margin-bottom: 2px;
 }
 
 h2 {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 200;
+  padding-bottom: 10px;
 }
 
-.busnumber {
-  color:#26BC98;
-  font-weight: 600;
+.table {
+  display: inline-block;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-top: 1px solid #cccc;
+}
+
+ul li {
+  float: left;
+  margin-top: -40px;
+}
+
+.first {
+  margin-top: 45px;
+}
+
+.bus-number {
+  width: 10%;
+  margin-left: 5px;
 }
 
 .direction {
-  padding-left: 20px;
+  width: 25%;
 }
 
 .destination {
-  padding-left: 20px;
+  width: 25%;
 }
 
-h3 {
-  color: #8C8C8C;
-  font-size: 13px;
-  font-weight: 400;
-  padding-left: 20px;
+.time {
+  width: 10%;
+}
+
+.time1 {
+  width: 30%;
 }
 
 .right-arrow {
-  height:20px;
+  height: 10px;
+  width: 10px;
+  padding-top: 7px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  margin-bottom: 50px;
 }
 
-.Reroute h2, .Reroute h3 {
+.right-arrow1 {
+  height: 10px;
+  width: 10px;
+  padding-top: 7px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  margin-bottom: 50px;
+}
+
+.reroute {
   color: red;
 }
 
-.Out-of-service h2, .Out-of-service1 h2, .Out-of-service2 h2 {
-  color:#8C8C8C;
-  font-weight: 300;
+.out-of-service {
+  color: #8C8C8C;
 }
