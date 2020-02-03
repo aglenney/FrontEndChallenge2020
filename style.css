@@ -1,157 +1,214 @@
 body {
   background-color: white;
-  font-family: -apple -apple-system, BlinkMacSystemFont, 'Avenir','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple -apple-system, BlinkMacSystemFont, 'Avenir','SF Pro Text', 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 375px;
-  border-right: 1px solid  #26BC98;
-  border-left: 1px solid  #26BC98;
-  border-top: 1px solid #26BC98;
+  height:667px;
+  margin: 0px;
+  padding: 0px;
 }
 
 main {
-  background-color:#258C74;
+  background-color: #258C74;
   width: 375px;
-  height: 804px;
+  height: 310;
+  margin: 0px;
+  padding: 0px;
 }
 
 nav {
-  height: 5px;
+  height: 10px;
   background-color: #258C74;
   padding-bottom: 5px;
 }
 
 header{
   width: 100%;
-  background-color: #258C74;
+  margin: 0px;
+  padding: 0px;
   text-align: center;
-  font-
+  background-color: #258C74;
 }
 
-.map {
-  background-image: url(Images/Map2.png);
-  background-position: right;
-  background-size: cover;
-  width: 100%;
-  height: 250px;
-  position: relative;
+.headergrid{
+  display: grid;
+  grid-template-columns: 10% 90%;
+  border-top:5px solid #258C74;
 }
 
-.wayfinding {
-padding-top: 85px;
-padding-left: 80px;
+.station{
+  padding-top: 5px;
+  padding-right: 40px;
+  color: white;
 }
 
+.BackArrow{
+  paddng-top: 10px;
+}
 
 h1 {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
   font-family: Avenir;
   font-size: 16px;
   font-weight: 300;
   color: white;
 }
 
-
-.para {
-background-color: white;
-border-color: grey;
+h2{
+  margin: 0%;
+  padding: 0%;
+}
+.map {
+  background-image: url(Images/Map2.png);
+  background-position: center;
+  background-size: contain;
+  margin-top: -10px;
+  width: 100%;
+  height: 120%;
 }
 
-p {
+.wayfinding {
+padding-top: 40px;
+padding-left: 35px;
+}
+
+.gridlabel {
+  display: grid;
+  height: 45px;
+  grid-template-columns: 80% 0%;
+  border-bottom: 2px solid #81F6A9 ;
+  background-color: white;
+}
+
+.bus-info {
+  font-family: SF Pro Text;
   font-weight: 400;
-  font-size: 15px;
   color: black;
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 2px;
+  flex: 100%;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #258C74 ;
 }
-
-.para-bus {
-  margin-left: 5px;
-}
-
-.para-direction {
-  margin-left: 12px;
-}
-
-.para-destination {
-  margin-left: 35px;
-}
-
-.para-time {
-  margin-left: 25px;
-}
-
-h2 {
-  font-size: 13px;
-  font-weight: 350;
+.timecolumn{
+  font-weight: 400;
+  color: black;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.table {
-  display: inline-block;
+.busline-information{
+  height:300px;
+}
+
+.grid{
+  height: 257px;
+  overflow-y: scroll;
   background-color: white;
-  overflow: scroll;
+  display: grid;
+  grid-template-columns: 4fr 6fr 5fr 6fr 1fr;
+  grid-auto-rows: 45px;
+  align-items: stretch;
+  padding-top: 2px;
 }
 
-ul {
-  list-style: none;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  border-top: 1px solid #cccc;
-}
-
-ul li {
-  float: left;
-  margin-top: -42px;
-}
-
-.first {
-  margin-top: 45px;
-}
-
-.bus-number {
-  width: 10%;
-  margin-left: 5px;
-}
-
-.direction {
-  width: 25%;
+.grid > .square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .destination {
-  width: 25%;
+  padding-top: 12px;
+  font-size: 14px;
+  font-weight: medium;
+  color: #7B7B81;
+  border-bottom: 1px solid #7B7B81;
+}
+.direction {
+  padding-top: 12px;
+  padding-left:20px;
+  font-size: 14px;
+  font-weight: medium;
+  color: #7B7B81;
+  border-bottom: 1px solid #7B7B81;
 }
 
 .time {
-  width: 10%;
+  padding-top: 12px;
+  padding-left: 22px;
+  font-size: 14px;
+  font-weight: medium;
+  color: #7B7B81;
+  border-bottom: 1px solid #7B7B81;
 }
 
-.time1 {
-  width: 30%;
-}
-
-.right-arrow {
-  height: 10px;
-  width: 10px;
-  padding-top: 7px;
-  padding-bottom: 20px;
-  padding-left: 80px;
-  margin-bottom: 50px;
-}
-
-.right-arrow1 {
-  height: 10px;
-  width: 10px;
-  padding-top: 7px;
-  padding-bottom: 20px;
-  padding-left: 5px;
-  margin-bottom: 50px;
-}
-
-.reroute {
+.destination2 {
+  padding-top: 12px;
+  font-size: 14px;
+  font-weight: medium;
   color: red;
+  border-bottom: 1px solid #7B7B81;
+}
+.direction2 {
+  padding-top: 12px;
+  padding-left:25px;
+  font-size: 14px;
+  font-weight: medium;
+  color: red;
+  border-bottom: 1px solid #7B7B81;
 }
 
-.out-of-service {
-  color: grey;
+.time2 {
+  padding-top: 12px;
+  padding-left: 22px;
+  font-size: 14px;
+  font-weight: medium;
+  color: red;
+  border-bottom: 1px solid grey;
+}
+
+.destination3 {
+  padding-top: 12px;
+  font-size: 14px;
+  color: #FFC700;
+  font-weight: medium;
+  border-bottom: 1px solid #7B7B81;
+}
+.direction3 {
+  padding-top: 12px;
+  padding-left:45px;
+  font-size: 14px;
+  font-weight: medium;
+  color: #FFC700;
+  border-bottom: 1px solid #7B7B81;
+}
+
+.time3 {
+  padding-top: 12px;
+  padding-left: 22px;
+  font-size: 14px;
+  font-weight: medium;
+  color: #FFC700;
+  border-bottom: 1px solid #7B7B81;
+}
+.arrow {
+  padding-top: 8px;
+  padding-left:5px;
+}
+
+.square{
+  height: 38px;
+  width: 38px;
+  background-color: #81F6A9;
+  border-radius: 10%;
+  font-size: 14px;
+  font-family: Avenir;
+  font-weight: bold;
+  border: 1px solid #81F6A9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
 }

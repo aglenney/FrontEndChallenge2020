@@ -6,102 +6,79 @@
     <link rel="stylsheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
   </head>
-
   <body>
-    <main>
-    <nav>
-      <img src="Images/Status Bar.png" alt="iOS Status Bar">
-    </nav>
+      <nav>
+        <img src="Images/Status Bar.png" alt="iOS Status Bar">
+      </nav>
+      <main>
+            <header>
 
-        <header>
-          <h1>Washington & State</h1>
-        </header>
-
+              <div class="headergrid">
+              <div class="backarrow"><img src="Images/back-arrow.png" alt="backarrow"></div>
+              <div class="station">Washington & State</div>
+            </div>
+            <h2><img src="Images/Down Arrow.png"></h2>
+            </header>
     <section class="map"> <!--use background-image in css-->
       <ul class "walking">
         <li class="wayfinding"><img src="Images/Overlay.png"></li>
     </section>
+  </main>
+    <div class="gridlabel">
+      <div class="bus-info">Bus Information</div>
+      <div class="timecolumn">Arrival</div>
+    </div>
 
-    <section class="para">
-      <p class="para-bus">Bus Information</p>
-      <p class="para-time"> Arrival Time</p>
-    </section>
+    <div class="grid">
+      <div class= "square">60</div>
+      <div class="destination">Randolph/Harbr.</div>
+      <div class="direction">Eastbound</div>
+      <div class="time">10:14am</div>
+      <div class="arrow"><img src="Images/arrow-right.png"></div>
+      <div class= "square">124</div>
+      <div class="destination">Navy Pier</div>
+      <div class="direction">Eastbound</div>
+      <div class="time">10:04am</div>
+      <div class="arrow"><img src="Images/arrow-right.png"></div>
+      <div class= "square">151</div>
+      <div class="destination">Devon/Clark</div>
+      <div class="direction">Northbound</div>
+      <div class="time">10:10am</div>
+      <div class="arrow"><img src="Images/arrow-right.png"></div>
+      <div class= "square">J14</div>
+      <div class="destination">103rd/Stony Isle.</div>
+      <div class="direction">Southbound</div>
+      <div class="time">10:11am</div>
+      <div class="arrow"><img src="Images/arrow-right.png"></div>
+      <div class= "square">124</div>
+      <div class="destination">Navy Pier</div>
+      <div class="direction">Southbound</div>
+      <div class="time">10:04am</div>
+      <div class="arrow"><img src="Images/arrow-right.png"></div>
+      <div class= "square">6x</div>
+      <div class="destination3">Jackson Park Exp.</div>
+      <div class="direction3">Reroute</div>
+      <div class="time3">N/A</div>
+      <div class="arrow"><img src="Images/arrow-right.png"></div>
+      <div class= "square">4</div>
+      <div class="destination2">Cottage Grove</div>
+      <div class="direction2">No Service</div>
+      <div class="time2"> 12:10am</div>
+      <div class="arrow"><img src="Images/arrow-right.png"></div>
+      <div class= "square">20</div>
+      <div class="destination2">Madison</div>
+      <div class="direction2">No Service</div>
+      <div class="time2">12:10am</div>
+      <div class="arrow"><img src="Images/arrow-right.png"></div>
+      <div class= "square">157</div>
+      <div class="destination2">Streeterville/Taylor</div>
+      <div class="direction2">No Service</div>
+      <div class="time2">6:00am</div>
+      <div class="arrow"><img src="Images/arrow-right.png"></div>
+      </div>
+<section class="footer">
+  <img src="Images/Tool Bars.png" alt="Menu">
+</section>
 
-    <section class="table">
-      <ul class="first">
-        <li class="bus-number"><h2>124</h2></li>
-        <li class="direction"><h2>Eastbound</h2></li>
-        <li class="destination"><h2>Navy Pier</h2></li>
-        <li class="time"><h2>9:50am</h2></li>
-        <li class="right-arrow"><img src="Images/arrow-right.png"></li>
-      </ul>
-
-      <ul>
-        <li class="bus-number"><h2>124</h2></li>
-        <li class="direction"><h2>Southbound</h2></li>
-        <li class="destination"><h2>Navy Pier</h2></li>
-        <li class="time"><h2>9:50am</h2></li>
-        <li class="right-arrow"><img src="Images/arrow-right.png"></li>
-        </ul>
-
-        <ul>
-          <li class="bus-number"><h2>J14</h2></li>
-          <li class="direction"><h2>Southbound</h2></li>
-          <li class="destination"><h2>Stony Island</h2></li>
-          <li class="time"><h2>9:55am</h2></li>
-          <li class="right-arrow" ><img src="Images/arrow-right.png"></li>
-        </ul>
-
-        <ul>
-          <li class="bus-number"><h2>151</h2></li>
-          <li class="direction"><h2>Northbound</h2></li>
-          <li class="destination"><h2>Devon/Clark</h2></li>
-          <li class="time"><h2>9:56am</h2></li>
-          <li class="right-arrow"><img src="Images/arrow-right.png"></li>
-        </ul>
-
-        <ul>
-          <li class="bus-number"><h2>60</h2></li>
-          <li class="direction"><h2>Eastbound</h2></li>
-          <li class="destination"><h2>Randolph</h2></li>
-          <li class="time"><h2>10:00am</h2></li>
-          <li class="right-arrow" ><img src="Images/arrow-right.png"></li>
-        </ul>
-
-        <ul class="reroute">
-          <li class="bus-number"><h2>6x</h2></li>
-          <li class="direction"><h2>Reroute</h2></li>
-          <li class="destination"><h2>Jackson Park</h2></li>
-          <li class="time"><h2>N/A</h2></li>
-          <li class="right-arrow"><img src="Images/arrow-right.png"></li>
-        </ul>
-
-        <ul class="out-of-service">
-          <li class="bus-number"><h2>4</h2></li>
-          <li class="direction"><h2>Out of Service</h2></li>
-          <li class="destination"><h2>Cottage Grove </h2> <li class="time1"><h2>Resumes 12:10am</h2></li>
-          <li class="right-arrow1"><img src="Images/arrow-right.png"></li>
-        </ul>
-
-        <ul class="out-of-service">
-          <li class="bus-number"><h2>20</h2></li>
-          <li class="direction"><h2>Out of Service</h2></li>
-          <li class="destination"><h2>Madison</h2></li>
-          <li class="time1"><h2>Resumes 12:10am</h2></li>
-          <li class="right-arrow1"><img src="Images/arrow-right.png"></li>
-        </ul>
-
-        <ul class="out-of-service">
-          <li class="bus-number"><h2>157</h2></li>
-          <li class="direction"><h2>Out of Service</h2></li>
-          <li class="destination"><h2>Streeterville</h2></li>
-          <li class="time1"><h2>Resumes 6:00am</h2></li>
-         <li class="right-arrow1"><img src="Images/arrow-right.png"></li>
-        </ul>
-      </section>
-      <section class="menu">
-        <img src="IOS-Status.jpg" alt="status">
-      </section>
-    </main>
   </body>
 </html>
