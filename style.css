@@ -58,19 +58,73 @@ h1 {
 h2{
   margin: 0%;
   padding: 0%;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: Avenir;
+}
+
+h3{
+  margin: 0%;
+  padding: 0%;
+  padding-top: 5px;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: Avenir;
+  color: #ffff;
+  display: inline-block;
 }
 .map {
   background-image: url("Images/Map.Background.png");
   background-position: center;
   background-size: contain;
-  margin-top: -10px;
+  margin-top: 5px;
   width: 100%;
   height: 120%;
+  text-align: center;
 }
 
-.wayfinding {
-padding-top: 40px;
-padding-left: 35px;
+.squarewayfinding {
+  width: 225px;
+  height: 160px;
+  background-color: white ;
+  border-radius: 5%;
+  display:inline-block;
+  margin-top: 45px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: solid 1px black;
+}
+
+li{
+  list-style: none;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.line1 {
+  padding-top: 12px;
+  padding-bottom:0px;
+}
+
+.line2{
+  padding-top:6px;
+  padding-bottom: 6;
+}
+.line3{
+  padding-bottom: 6;
+}
+.ctabutton{
+  width: 135px;
+  height: 35px;
+  background-color: #258C74;
+  border-radius: 5%;
+  display: inline-block;
+  padding: 0;
 }
 
 .gridlabel {
@@ -107,7 +161,7 @@ padding-left: 35px;
   overflow-y: scroll;
   background-color: white;
   display: grid;
-  grid-template-columns: 4fr 6fr 5fr 6fr 1fr;
+  grid-template-columns: 4fr 6fr 9fr 6fr 1fr;
   grid-auto-rows: 45px;
   align-items: stretch;
   padding-top: 2px;
@@ -121,14 +175,16 @@ padding-left: 35px;
 
 .destination {
   padding-top: 12px;
+  padding-left: 10px;
+  line-height: 1px;
   font-size: 14px;
   font-weight: medium;
   color: #7B7B81;
   border-bottom: 1px solid #7B7B81;
 }
-.direction {
+.frequency {
   padding-top: 12px;
-  padding-left:20px;
+  padding-left:9px;
   font-size: 14px;
   font-weight: medium;
   color: #7B7B81;
@@ -146,14 +202,17 @@ padding-left: 35px;
 
 .destination2 {
   padding-top: 12px;
+  padding-left: 10px;
+  line-height: 1px;
   font-size: 14px;
   font-weight: medium;
   color: red;
   border-bottom: 1px solid #7B7B81;
 }
-.direction2 {
+.frequency2 {
   padding-top: 12px;
-  padding-left:25px;
+  padding-left:9px;
+  line-height: 1px;
   font-size: 14px;
   font-weight: medium;
   color: red;
@@ -171,14 +230,16 @@ padding-left: 35px;
 
 .destination3 {
   padding-top: 12px;
+  padding-left: 10px;
+  line-height: 1px;
   font-size: 14px;
   color: #FFC700;
   font-weight: medium;
   border-bottom: 1px solid #7B7B81;
 }
-.direction3 {
+.frequency3 {
   padding-top: 12px;
-  padding-left:45px;
+  padding-left: 9px;
   font-size: 14px;
   font-weight: medium;
   color: #FFC700;
@@ -211,4 +272,34 @@ padding-left: 35px;
   align-items: center;
   justify-content: center;
   margin-left: 5px;
+}
+
+.footer{
+  background: #258C74;
+  list-style: none;
+  text-align: center;
+  border: none;
+}
+
+.footer-item{
+  display: inline-block;
+}
+
+h4{
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin: 0;
+}
+
+h5{
+  padding-top: 10px;
+  padding-right: 90px;
+  margin: 0;
+}
+
+h6{
+  padding-top: 10px;
+  padding-left: 90px;
+  margin: 0;
 }
